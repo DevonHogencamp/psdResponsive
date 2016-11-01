@@ -30,8 +30,11 @@
         </header>
 
         <div id="mainBanner">
-            <!--Replace with the picture element for mobile styles-->
-            <img src="images/banner.jpg" alt="banner" />
+            <picture>
+                <source srcset="images/bannerS.jpg" media="(max-width: 480px)">
+                <source srcset="images/bannerM.jpg" media="(max-width: 768px)">
+                <img srcset="images/banner.jpg" alt="banner" />    
+            </picture>
         </div>
 
         <main class="wrapper">
